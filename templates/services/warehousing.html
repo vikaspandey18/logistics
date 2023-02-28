@@ -1,0 +1,78 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+  Logistics | Warehousing
+{% endblock title %}
+
+{% block content %}
+
+  <main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <div class="breadcrumbs">
+      <div class="page-header d-flex align-items-center" style="background-image: url('{% static 'assets/img/page-header.jpg' %}');">
+        <div class="container position-relative">
+          <div class="row d-flex justify-content-center">
+            <div class="col-lg-6 text-center">
+              <h2>Warehouses</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav>
+        <div class="container">
+          <ol>
+            <li><a href="{% url 'home' %}">Home</a></li>
+            <li>Warehouses</li>
+          </ol>
+        </div>
+      </nav>
+    </div><!-- End Breadcrumbs -->
+
+    <!-- ======= Service Details Section ======= -->
+    <section id="service-details" class="service-details">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4">
+            <div class="services-list">
+              <a href="{% url 'service-detail' %}">Storage</a>
+              <a href="{% url 'logistics' %}">Logistics</a>
+              <a href="{% url 'cargo' %}">Cargo</a>
+              <a href="{% url 'trucking' %}">Trucking</a>
+              <a href="{% url 'packaging' %}">Packaging</a>
+              <a href="{% url 'warehousing' %}" class="active" >Warehousing</a>
+            </div>
+
+            <h4>Warehouses Service</h4>
+            <p>Warehouses are large facilities used to store goods or materials for a variety of purposes, including transportation.</p>
+          </div>
+
+          <div class="col-lg-8">
+            <img src="{% static 'assets/img/warehousing-service.jpg' %}" alt="" class="img-fluid services-img">
+            <h3>It may be used to store packages, equipment, or other materials related to transportation until they are ready to be shipped out or used for transportation</h3>
+            <p>
+                There are several different types of warehouses that may be used in the context of a transport website. Some common examples include.
+            </p>
+            <ul>
+              <li><i class="bi bi-check-circle"></i> <span>Public Warehouses.</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>Private Warehouses.</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>Distribution Centers</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>Fulfillment Centers</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>Cold storage Warehouses</span></li>
+            </ul>
+            <p>
+                Overall, warehouses are an essential part of the transport industry as they enable companies to store goods and materials in a safe and secure manner until they are ready to be transported. They also provide a range of services, such as handling and distribution, that can help streamline the transportation process and ensure that packages are delivered on time and in good condition.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Service Details Section -->
+
+  </main><!-- End #main -->
+
+{% endblock content %}

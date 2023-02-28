@@ -1,0 +1,171 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+  Logistics | About Us
+{% endblock title %}
+
+
+{% block content %}
+
+  <main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <div class="breadcrumbs">
+      <div class="page-header d-flex align-items-center" 
+      style="background-image: url('{% static 'assets/img/page-header.jpg' %}')">
+        <div class="container position-relative">
+          <div class="row d-flex justify-content-center">
+            <div class="col-lg-6 text-center">
+              <h2>About</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav>
+        <div class="container">
+          <ol>
+            <li><a href="{% url 'home' %}">Home</a></li>
+            <li>About</li>
+          </ol>
+        </div>
+      </nav>
+    </div><!-- End Breadcrumbs -->
+
+    <!-- ======= About Us Section ======= -->
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row gy-4">
+          <div class="col-lg-6 position-relative align-self-start order-lg-last order-first">
+            <img src="{% static 'assets/img/about.jpg' %}" class="img-fluid" alt="">
+            <a href="https://www.youtube.com/watch?v=2JcHMhtH6_s" class="glightbox play-btn"></a>
+          </div>
+          <div class="col-lg-6 content order-last  order-lg-first">
+            <h3>About Us</h3>
+            <p class='text-justify'>
+              At Logistics, we are passionate about delivering convenience and peace of mind to our customers. We understand the importance of timely and secure shipping, which is why we offer fast, reliable, and efficient delivery services that prioritize your packages. Our personalized services cater to your unique needs, ensuring your packages arrive at their destination on time and in perfect condition. We pride ourselves on our affordable and secure shipping options, which make us the go-to choice for businesses and individuals alike. Trust us to simplify your life with our hassle-free and streamlined shipping solutions.
+            </p>
+          </div>
+          <div class="col-lg-12 content order-last" >
+            <ul>
+              <li data-aos="fade-up" data-aos-delay="100">
+                <i class="bi bi-diagram-3"></i>
+                <div>
+                  <h5>Fast and efficient delivery options for your convenience</h5>
+                  <p>Our fast and efficient delivery options ensure that your packages arrive at their destination on time, every time. With streamlined processes and state-of-the-art technology, we make sure your shipments are delivered as quickly as possible.</p>
+                </div>
+              </li>
+              <li data-aos="fade-up" data-aos-delay="200">
+                <i class="bi bi-fullscreen-exit"></i>
+                <div>
+                  <h5>Secure and reliable shipping solutions to ensure the safety of your packages</h5>
+                  <p>We understand the importance of the safety and security of your packages, which is why we provide reliable shipping solutions. Our experienced team handles your packages with care, ensuring they arrive at their destination in the same condition as when they were shipped.</p>
+                </div>
+              </li>
+              <li data-aos="fade-up" data-aos-delay="300">
+                <i class="bi bi-broadcast"></i>
+                <div>
+                  <h5>Personalized services to cater to your unique needs</h5>
+                  <p>We provide personalized services to meet your unique needs, whether you need to ship a small package or a large shipment. Our team works with you to create customized shipping solutions that fit your specific requirements.</p>
+                </div>
+              </li>
+              <li data-aos="fade-up" data-aos-delay="300">
+                <i class="bi bi-bezier"></i>
+                <div>
+                  <h5>Affordable shipping options that fit your budget</h5>
+                  <p>We offer affordable shipping options that fit your budget, without compromising on the quality of service. Our competitive pricing ensures that you get the best value for your money.</p>
+                </div>
+              </li>
+              <li data-aos="fade-up" data-aos-delay="300">
+                <i class="bi bi-bounding-box"></i>
+                <div>
+                  <h5>Timely delivery of your packages, ensuring they arrive on schedule</h5>
+                  <p>We prioritize timely delivery of your packages, ensuring that they arrive at their destination on schedule. With real-time tracking and monitoring, you can keep track of your shipments every step of the way.</p>
+                </div>
+              </li>
+              <li data-aos="fade-up" data-aos-delay="300">
+                <i class="bi bi-boxes"></i>
+                <div>
+                  <h5>Streamlined and hassle-free shipping process, from pickup to delivery</h5>
+                  <p>We prioritize timely delivery of your packages, ensuring that they arrive at their destination on schedule. With real-time tracking and monitoring, you can keep track of your shipments every step of the way.</p>
+                </div>
+              </li>
+              <li data-aos="fade-up" data-aos-delay="300">
+                <i class="bi bi-brightness-high"></i>
+                <div>
+                  <h5>Cutting-edge technology to track and monitor your packages in real-time</h5>
+                  <p>Our streamlined and hassle-free shipping process ensures that your shipments are picked up and delivered without any complications. We take care of everything, from pickup to delivery, so you can focus on your business.</p>
+                </div>
+              </li>
+              <li data-aos="fade-up" data-aos-delay="300">
+                <i class="bi bi-calendar-range"></i>
+                <div>
+                  <h5>Friendly and knowledgeable customer service to assist you with any questions or concerns</h5>
+                  <p>Our friendly and knowledgeable customer service team is available to assist you with any questions or concerns you may have. We are committed to providing you with the best customer experience possible.</p>
+                </div>
+              </li>
+              <li data-aos="fade-up" data-aos-delay="300">
+                <i class="bi bi-capslock"></i>
+                <div>
+                  <h5>Flexible shipping options, including overnight and same-day delivery</h5>
+                  <p>We offer flexible shipping options, including overnight and same-day delivery, to meet your urgent shipping needs.</p>
+                </div>
+              </li>
+              <li data-aos="fade-up" data-aos-delay="300">
+                <i class="bi bi-tree"></i>
+                <div>
+                  <h5>Environmentally-friendly practices, such as eco-friendly packaging and carbon offset programs.</h5>
+                  <p>We are committed to environmentally-friendly practices, such as using eco-friendly packaging and implementing carbon offset programs to reduce our carbon footprint. With our commitment to sustainability, you can trust us to help you reduce your environmental impact.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Us Section -->
+
+    <!-- ======= Stats Counter Section ======= -->
+    <section id="stats-counter" class="stats-counter pt-0">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item text-center w-100 h-100">
+              <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Clients</p>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item text-center w-100 h-100">
+              <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Projects</p>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item text-center w-100 h-100">
+              <span data-purecounter-start="0" data-purecounter-end="1453" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Hours Of Support</p>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item text-center w-100 h-100">
+              <span data-purecounter-start="0" data-purecounter-end="32" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Workers</p>
+            </div>
+          </div><!-- End Stats Item -->
+
+        </div>
+
+      </div>
+    </section><!-- End Stats Counter Section -->
+    
+
+  </main><!-- End #main -->
+
+{% endblock content %}

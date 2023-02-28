@@ -1,0 +1,18 @@
+section.contact{
+    padding: 0 0 80px 0;
+}
+
+/* HOME PAGE */
+.hero form .btn-primary {
+    padding: 6px 30px;
+}
+
+/* FOOTER */
+.footer {
+    padding: 50px 0 20px;
+}
+
+/* ABOUT US */
+.text-justify{
+    text-align: justify;
+}

@@ -1,0 +1,79 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+  Logistics | Service Details
+{% endblock title %}
+
+{% block content %}
+
+  <main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <div class="breadcrumbs">
+      <div class="page-header d-flex align-items-center" style="background-image: url('{% static 'assets/img/page-header.jpg' %}');">
+        <div class="container position-relative">
+          <div class="row d-flex justify-content-center">
+            <div class="col-lg-6 text-center">
+              <h2>Service Details</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav>
+        <div class="container">
+          <ol>
+            <li><a href="{% url 'home' %}">Home</a></li>
+            <li>Service Details</li>
+          </ol>
+        </div>
+      </nav>
+    </div><!-- End Breadcrumbs -->
+
+    <!-- ======= Service Details Section ======= -->
+    <section id="service-details" class="service-details">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4">
+            <div class="services-list">
+              <a href="{% url 'service-detail' %}" class="active">Storage</a>
+              <a href="{% url 'logistics' %}">Logistics</a>
+              <a href="{% url 'cargo' %}">Cargo</a>
+              <a href="{% url 'trucking' %}">Trucking</a>
+              <a href="{% url 'packaging' %}">Packaging</a>
+              <a href="{% url 'warehousing' %}">Warehousing</a>
+            </div>
+
+            <h4>Storage Facility</h4>
+            <p>Storage typically refers to the physical space used to store vehicles, equipment, and other materials related to transportation. </p>
+          </div>
+
+          <div class="col-lg-8">
+            <img src="{% static 'assets/img/storage-service.jpg' %}" alt="" class="img-fluid services-img">
+            <h3>Storage facilities for trucks, trailers, and other vehicles, as well as warehouses or other storage spaces used to store goods or materials</h3>
+            <p>
+              There are several different types of storage facilities that may be used in the context of a transport website. Some common examples include:
+            </p>
+            <ul>
+              <li><i class="bi bi-check-circle"></i> <span>Vehicle storage facilities.</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>Equipment storage facilities.</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>Warehouses.</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>Distribution Centers.</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>Fulfillment Centers.</span></li>
+            </ul>
+            <p>
+              Overall, storage is an important part of the transport industry as it enables companies to keep their vehicles and equipment organized and secure until they are needed for transportation. It also allows them to store goods and materials in a safe and secure manner until they are ready to be transported to their final destination.
+            </p>
+            
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Service Details Section -->
+
+  </main><!-- End #main -->
+
+{% endblock content %}

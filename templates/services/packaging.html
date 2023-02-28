@@ -1,0 +1,78 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+  Logistics | Packaging
+{% endblock title %}
+
+{% block content %}
+
+  <main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <div class="breadcrumbs">
+      <div class="page-header d-flex align-items-center" style="background-image: url('{% static 'assets/img/page-header.jpg' %}');">
+        <div class="container position-relative">
+          <div class="row d-flex justify-content-center">
+            <div class="col-lg-6 text-center">
+              <h2>Packing</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav>
+        <div class="container">
+          <ol>
+            <li><a href="{% url 'home' %}">Home</a></li>
+            <li>Packing</li>
+          </ol>
+        </div>
+      </nav>
+    </div><!-- End Breadcrumbs -->
+
+    <!-- ======= Service Details Section ======= -->
+    <section id="service-details" class="service-details">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4">
+            <div class="services-list">
+                <a href="{% url 'service-detail' %}">Storage</a>
+                <a href="{% url 'logistics' %}">Logistics</a>
+                <a href="{% url 'cargo' %}">Cargo</a>
+                <a href="{% url 'trucking' %}">Trucking</a>
+                <a href="{% url 'packaging' %}" class="active">Packaging</a>
+                <a href="{% url 'warehousing' %}">Warehousing</a>
+            </div>
+
+            <h4>Packing Service</h4>
+            <p>Packing is an essential part of the transport industry as it involves preparing goods and materials for safe transportation from one location to another.</p>
+          </div>
+
+          <div class="col-lg-8">
+            <img src="{% static 'assets/img/packaging-service.jpg' %}" alt="" class="img-fluid services-img">
+            <h3>It involves using appropriate packaging materials and techniques to ensure that items are protected during transportation.</h3>
+            <p>
+                There are several different types of packing materials that may be used in the context of a transport website. Some common examples include:
+            </p>
+            <ul>
+              <li><i class="bi bi-check-circle"></i> <span>Boxes.</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>Crates.</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>Bubble wrap</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>Packing peanuts</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>Strapping and wrapping materials</span></li>
+            </ul>
+            <p>
+                Overall, packing is an important part of the transport industry as it helps to ensure that goods and materials arrive at their destination safely and in good condition. By using appropriate packing materials and techniques, transport companies can help to minimize the risk of damage to goods during transportation and provide their customers with a reliable and trustworthy service.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Service Details Section -->
+
+  </main><!-- End #main -->
+
+{% endblock content %}

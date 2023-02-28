@@ -1,0 +1,77 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+  Logistics | Logistics
+{% endblock title %}
+
+{% block content %}
+
+  <main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <div class="breadcrumbs">
+      <div class="page-header d-flex align-items-center" style="background-image: url('{% static 'assets/img/page-header.jpg' %}');">
+        <div class="container position-relative">
+          <div class="row d-flex justify-content-center">
+            <div class="col-lg-6 text-center">
+              <h2>Logistics</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav>
+        <div class="container">
+          <ol>
+            <li><a href="{% url 'home' %}">Home</a></li>
+            <li>Logistics</li>
+          </ol>
+        </div>
+      </nav>
+    </div><!-- End Breadcrumbs -->
+
+    <!-- ======= Service Details Section ======= -->
+    <section id="service-details" class="service-details">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4">
+            <div class="services-list">
+                <a href="{% url 'service-detail' %}">Storage</a>
+                <a href="{% url 'logistics' %}" class="active">Logistics</a>
+                <a href="{% url 'cargo' %}">Cargo</a>
+                <a href="{% url 'trucking' %}">Trucking</a>
+                <a href="{% url 'packaging' %}">Packaging</a>
+                <a href="{% url 'warehousing' %}">Warehousing</a>
+            </div>
+
+            <h4>Logistics Service</h4>
+            <p>Logistics refers to the planning, coordination, and management of the movement of goods or materials from one place to another.</p>
+          </div>
+
+          <div class="col-lg-8">
+            <img src="{% static 'assets/img/logistics-service.jpg' %}" alt="" class="img-fluid services-img">
+            <h3>Logistics involves transportation, warehousing, inventory management, and supply chain management.</h3>
+            <p>
+              Transport websites often provide logistics services to their customers, which can include transportation, warehousing, and supply chain management. These services can help businesses to streamline their operations and improve their efficiency, while also reducing costs and improving customer service.
+            </p>
+            <ul>
+              <li><i class="bi bi-check-circle"></i> <span>Transportation Planning.</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>Warehousing And Inventory Management.</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>Supply Chain Management</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>Customer Service</span></li>
+            </ul>
+            <p>
+              Overall, logistics is a critical component of the transport industry, as it enables businesses to move goods and materials efficiently and cost-effectively. By providing logistics services, transport websites can help their customers to improve their operations, reduce costs, and enhance their customer service.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Service Details Section -->
+
+  </main><!-- End #main -->
+
+{% endblock content %}
